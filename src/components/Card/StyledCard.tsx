@@ -1,19 +1,13 @@
+import { CardTextCSS } from "components/StyledComponents";
 import styled from "styled-components";
 
-const StyledCard = styled.div`
-  background: lightcoral;
-  color: #331b1b;
+export const StyledCard = styled.div<{ selected?: boolean }>`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8px;
+  ${CardTextCSS};
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  min-height: 80px;
-  font-size: 1.5rem;
-
-  &:hover {
-    opacity: 0.8;
-  }
+  outline: ${(props) => (props.selected ? `red solid 5px` : "none")};
 `;
 
 export default StyledCard;
