@@ -27,7 +27,7 @@ export function Models() {
         <Link to="/">{make}</Link>
       </StyledBreadcrumb>
       {isLoading && <StyledInfoText>Loading...</StyledInfoText>}
-      {filteredData.length === 0 && !isLoading && (
+      {filteredData.length === 0 && !isLoading && !isError && (
         <StyledInfoText>No records found</StyledInfoText>
       )}
       {isError && (

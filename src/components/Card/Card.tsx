@@ -4,8 +4,8 @@ import { Text } from "components/StyledComponents";
 
 export interface CardProps {
   vehicle: Vehicle;
-  selected?: boolean;
-  onClick?: () => void;
+  selected: boolean;
+  onClick: () => void;
 }
 
 export function Card({ vehicle, selected, onClick }: CardProps) {
@@ -37,3 +37,5 @@ export function Card({ vehicle, selected, onClick }: CardProps) {
     </StyledCard>
   );
 }
+
+export default Card;

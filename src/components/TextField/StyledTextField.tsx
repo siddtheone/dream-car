@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledTextField = styled.input`
   display: block;
-  min-width: 500px;
+  min-width: 200px;
   margin: 10px auto;
   text-align: center;
   font-size: 1.2rem;
