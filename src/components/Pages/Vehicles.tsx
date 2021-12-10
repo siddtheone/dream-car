@@ -36,7 +36,7 @@ export function Vehicles() {
 
   return (
     <div>
-      <TextField value={search} onChange={setSearch} />
+      <TextField onChange={setSearch} />
       <StyledBreadcrumb>
         <Link to="/">{make}</Link>
         <Link to={`../${make}`}>{model}</Link>

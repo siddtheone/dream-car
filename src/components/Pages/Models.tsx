@@ -22,7 +22,7 @@ export function Models() {
   );
   return (
     <div>
-      <TextField value={search} onChange={setSearch} />
+      <TextField onChange={setSearch} />
       <StyledBreadcrumb>
         <Link to="/">{make}</Link>
       </StyledBreadcrumb>

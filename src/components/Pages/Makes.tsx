@@ -18,7 +18,7 @@ export function Makes() {
   );
   return (
     <div>
-      <TextField value={search} onChange={setSearch} />
+      <TextField onChange={setSearch} />
       {isLoading && <StyledInfoText>Loading...</StyledInfoText>}
       {filteredData.length === 0 && !isLoading && !isError && (
         <StyledInfoText>No records found</StyledInfoText>
