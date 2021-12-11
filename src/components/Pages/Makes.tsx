@@ -28,7 +28,7 @@ export function Makes() {
           Something went wrong. Try again later.
         </StyledErrorText>
       )}
-      {filteredData.length > 0 && (
+      {filteredData.length > 0 && !isError && (
         <StyledGrid>
           {filteredData.map((make) => (
             <StyledLink to={make} key={make}>

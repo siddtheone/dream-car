@@ -37,6 +37,7 @@ export function Models() {
       )}
       <StyledGrid>
         {filteredData.length > 0 &&
+          !isError &&
           filteredData.map((model) => (
             <StyledLink to={`${model}`} key={model}>
               {model}

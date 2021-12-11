@@ -53,6 +53,7 @@ export function Vehicles() {
 
       <StyledGrid>
         {filteredData.length > 0 &&
+          !isError &&
           filteredData.map((vehicle, i) => (
             <Card
               vehicle={vehicle}
