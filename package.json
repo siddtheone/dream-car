@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "node apiserver/server.js"
+    "serve": "node apiserver/server.js",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
     "@types/styled-components": "^5.1.17",
     "cypress": "^9.1.1",
     "jest-styled-components": "^7.0.8",
