@@ -21,6 +21,10 @@ Note: In case any app doesn't work as expect try running below commands seperatl
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `yarn cypress`
+
+Starts the end to end case with Cypress.
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
